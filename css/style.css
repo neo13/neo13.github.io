@@ -519,3 +519,8 @@ hr.post-hr {
 .post {
     padding-bottom: 25px;
 }
+
+.jumbotron-photo{
+    height: 150px;
+    overflow: hidden;
+}
