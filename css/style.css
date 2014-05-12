@@ -11,6 +11,10 @@ body {
     padding:50px;
 }
 
+.padding-bottom-50 {
+    padding-bottom: 50px;
+}
+
 .margin-top-50 {
     margin-top:50px;
 }
@@ -452,4 +456,66 @@ li.post-link:before {
 ul.posts-list {
     list-style: none;
     padding-left: 25px;
+}
+
+div.ribben {
+    height: 70px;
+    width: 90px;
+    color: #fff;
+    text-align: center;
+    padding-top:25px;
+    background: #FC6E51;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+}
+
+div.ribben:after {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    right: -5px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 0px 0px 5px;
+    border-color: transparent transparent transparent rgb(233, 87, 63);
+}
+
+div.ribben span {
+    position: absolute;
+    bottom: -50px;
+    width: 0px;
+    left: 0;
+    height: 0px;
+    border-style: solid;
+    border-width: 50px 75px 0px 0px;
+    border-color: #FC6E51 transparent transparent transparent;
+}
+
+div.ribben span:last-child {
+    left: inherit;
+    right: 0px;
+    border-width: 0px 75px 50px 0px;
+    border-color: transparent #FC6E51 transparent transparent;
+}
+
+.post-title, .post-subtitle, .post {
+    margin-left: 35px;
+}
+
+.post-subtitle {
+    font-style: italic;
+    font-size: 9.8pt;
+    color: #777;
+}
+
+hr.post-hr {
+    border-top: 1px solid #ededed !important;
+    margin: 5px 30px !important;
+    width: 63% !important;
+}
+
+.post {
+    padding-bottom: 25px;
 }
