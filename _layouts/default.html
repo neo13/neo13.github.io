@@ -46,34 +46,31 @@
             </div>
           </div>
       </div>
-    <div class="row">
+    <div class="row margin-top-50">
       <div class="col-md-8">
         {{ content }}
       </div>
       <div class="col-md-4">
-        <div class="sidebar" id="sidebar">
-        <div class="header">
-          <h1 class="title"><a href="/"><img id="logo" src="/images/logo.png"></a></h1>
-          <span class="tagline">A responsive Jekyll theme</span>
+        <div class="sidebar card" id="sidebar">
+        <div class="row padding-50">
+            <div class="row">
+                <center><i class="fa fa-github fa-6x"></i></center>
+            </div>
+            <div class="row">
+                <center>Powered and Hosted by <a href="https://github.com">github</a></center>
+            </div>
         </div>
+        <legend>Recent Posts</legend>
         <div class="posts">
           <ul class="posts-list">
             {% for post in site.posts %}
               <li class="post-link">
                 <a class="post-title" href="{{ post.url }}">
-                  <span class="post-date">{{ post.date | date_to_string }}</span>
                   {{ post.title }}
                 </a>
               </li>
             {% endfor %}
           </ul>
-        </div>
-        <div class="footer">
-          <span id="footer-links">
-            <a href="" class="footer-link">About</a> <span class="separator">&bull;</span>
-            <a href="" class="footer-link">Twitter</a> <span class="separator">&bull;</span>
-            <a href="" class="footer-link">GitHub</a>
-          </span>
         </div>
       </div>
       </div>
@@ -115,7 +112,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="row statistics">
-                            <center><p><span class="fa fa-bar-chart-o"></span> <span class="bright"><?php echo $total['rows'][0][0] ?></span> Total Site Visits, <span class="bright"><?php echo $today['rows'][0][0] ?></span> Todays Visit</p></center>
+                            <center><p><span class="fa fa-bar-chart-o"></span> <span class="bright"></span> Total Site Visits, <span class="bright"></span> Todays Visit</p></center>
                         </div>
                         <hr>
                         <div class="row license">
