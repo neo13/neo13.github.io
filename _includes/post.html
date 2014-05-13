@@ -29,4 +29,15 @@
       <p id="date">{{ page.date | date_to_string }}</p>
       <span> </span> <span> </span>
   </div>
+  <div id="conversait_area"></div>
+  <script type="text/javascript">
+    var conversait_sitename = "github";
+    (function() {
+      var conversait = document.createElement("script"); 
+      conversait.type = "text/javascript"; 
+      conversait.async = true;
+      conversait.src = "http://www.theburn-zone.com/web/js/embed.js";
+      (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(conversait);
+    })();
+  </script>
 </div>
