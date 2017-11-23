@@ -7,7 +7,8 @@ layout: compress
 {% include head.html %}
 <body id="homepage">
 
-  <div class="block-left">
+  <div class="block-left" data-vide-bg="mp4: {{ site.url }}/videos/bg.mp4, webm: {{ site.url }}/videos/bg.webm, ogv: {{ site.url }}/videos/bg.ogv, poster: {{ site.url }}/videos/poster.jpeg"
+  data-vide-options="posterType: jpeg, loop: true, muted: true, position: 0% 0%, resizing: true">
     <div class="content">
       <div class="main-info">
         <a href="{{ site.url }}" class="logo"><img class="circle" src="{{ site.logo }}"></a>
@@ -20,7 +21,6 @@ layout: compress
         {% include social-links.html %}
       </div>
     </div>
-    <canvas></canvas>
   </div>
 
   <div class="block-right">
@@ -38,6 +38,9 @@ layout: compress
   </div>
   {% include overlay.html %}
   {% include scripts.html %}
-  <script src="{{ site.url }}/assets/js/canvas.js"></script>
+  <script src="{{ site.url }}/assets/js/src/jquery.vide.min.js"></script>
+  <script type="text/javascript">
+    $('.block-left').vide("mp4: {{ site.url }}/videos/bg.mp4, webm: {{ site.url }}/videos/bg.webm, ogv: {{ site.url }}/videos/bg.ogv, poster: {{ site.url }}/videos/poster.jpeg", "posterType: jpeg, loop: true, muted: true, position: 0% 0%, resizing: true");
+  </script>
 </body>
 </html>
