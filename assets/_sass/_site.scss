@@ -323,7 +323,7 @@
     overflow: hidden;
     li {
       display: inline-block;
-      background: #585b63;
+      background: $blue-gray-300;
       margin-right: 10px;
       vertical-align: middle;
       -webkit-transform: translateZ(0);
@@ -345,7 +345,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: $green;
+        background: $blue-gray-700;
         -webkit-transform: scaleY(0);
         transform: scaleY(0);
         -webkit-transform-origin: 50% 100%;
@@ -362,9 +362,6 @@
           -webkit-transform: scaleY(1);
           transform: scaleY(1);
         }
-      }
-      &:nth-child(odd) {
-        background: $overlay-color;
       }
       &:last-child {
         margin-right: 0;
