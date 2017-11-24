@@ -15,6 +15,7 @@ $('.projects-menu-icon').click(function() {
   
 // All others
 $(document).ready(function() {
+  console.log('test');
 	$('.image-popup').magnificPopup({
     type: 'image',
     tLoading: 'Loading image #%curr%...',
