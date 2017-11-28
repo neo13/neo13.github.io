@@ -403,7 +403,7 @@
   h1,
   h2 {
     font-size: 35px;
-    color: lighten($black, 27.8431);
+    color: $black;
     &:after {
       position: absolute;
       left: auto;
@@ -413,13 +413,14 @@
       -ms-transform: none;
       -o-transform: none;
       transform: none;
-      background: $green;
+      background: lighten($black, 20);
       left: 0;
       width: 200px;
     }
   }
   p {
-    color: darken($white, 40);
+    text-align: justify;
+    color: lighten($black, 20);
     font-size: 16px;
     margin: 10px 0;
     padding-top: 0;
@@ -432,6 +433,7 @@
 
 #posts {
   .block-right {
+    background: $blue-gray-100;
     display: block;
     .content {
       height: auto;
@@ -696,14 +698,10 @@
 #posts {
   .block-left {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQYV2NkwAIYQWIJNd0NC1pKG2A0WBAdEK8SAChBEAaeWS6HAAAAAElFTkSuQmCC) repeat;
-    //background: fade-out($blue-gray-200, 0.45) no-repeat;
-    //background-size: cover, cover;
   }
 }
 .block-left {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQYV2NkwAIYQWIJNd0NC1pKG2A0WBAdEK8SAChBEAaeWS6HAAAAAElFTkSuQmCC) repeat;
-  //background: fade-out($blue-gray-200, 0.45) no-repeat;
-  //background-size: cover;
 }
 
 // Media queries
