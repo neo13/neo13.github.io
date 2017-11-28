@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Illustratio
 ---
 # je m'appel
 
