@@ -704,6 +704,30 @@
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQYV2NkwAIYQWIJNd0NC1pKG2A0WBAdEK8SAChBEAaeWS6HAAAAAElFTkSuQmCC) repeat;
 }
 
+.navigation {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+
+  a {
+    float: right;
+    margin: 10px;
+    text-align: center;
+    color: $blue-gray-300;
+    font-size: 13px;
+
+    i {
+      margin-bottom: 5px;
+    }
+
+    &:hover {
+      color: $blue-gray-700;
+    }
+  }
+
+}
+
 // Media queries
 @media screen and (max-height: 605px) {
   .post-title-section .section-title {
